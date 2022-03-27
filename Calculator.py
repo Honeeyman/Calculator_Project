@@ -59,5 +59,5 @@ while True:
     elif restart == "y" or restart == "yes":
         continue
 
-    # This is a github test
+    # This is a GitHub test
 
