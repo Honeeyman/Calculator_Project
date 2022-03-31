@@ -19,6 +19,8 @@ def multiply(num1, num2):
 def divide(num1, num2):
     return num1 / num2
 
+# Loop for calculator operation
+
 
 while True:
 
@@ -52,6 +54,7 @@ while True:
     else:
         print("Invalid input")
 
+    # Allows user to restart or quit
     restart = input("Do you want to do another calculation? (y/n) ")
     if restart == "n" or restart == "no":
         print("Goodbye")
