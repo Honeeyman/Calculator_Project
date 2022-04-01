@@ -33,26 +33,31 @@ while True:
     # Take input from the user-
     select = float(input("Select operations form 1, 2, 3, 4 : "))
 
-    number_1 = float(input("Enter first number: "))
-    number_2 = float(input("Enter second number: "))
+    if select == (1 or 2 or 3 or 4 or 1.0 or 2.0 or 3.0 or 4.0):
 
-    if select == 1:
-        print(number_1, "+", number_2, "=",
-              add(number_1, number_2))
+        number_1 = float(input("Enter first number: "))
+        number_2 = float(input("Enter second number: "))
 
-    elif select == 2:
-        print(number_1, "-", number_2, "=",
-              subtract(number_1, number_2))
+        if select == 1:
+            print(number_1, "+", number_2, "=",
+                  add(number_1, number_2))
 
-    elif select == 3:
-        print(number_1, "*", number_2, "=",
-              multiply(number_1, number_2))
+        elif select == 2:
+            print(number_1, "-", number_2, "=",
+                  subtract(number_1, number_2))
 
-    elif select == 4:
-        print(number_1, "/", number_2, "=",
-              divide(number_1, number_2))
+        elif select == 3:
+            print(number_1, "*", number_2, "=",
+                  multiply(number_1, number_2))
+
+        elif select == 4:
+            print(number_1, "/", number_2, "=",
+                  divide(number_1, number_2))
+        else:
+            print("Invalid input")
     else:
-        print("Invalid input")
+        print("Invalid Input")
+        continue
 
     # Allows user to restart or quit
     restart = input("Do you want to do another calculation? (y/n) ")
@@ -61,6 +66,9 @@ while True:
         break
     elif restart == "y" or restart == "yes":
         continue
+    else:
+        break
+
 
     # This is a GitHub test
 
